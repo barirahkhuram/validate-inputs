@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form name="myform" onsumit="validateform();">
+            name:<input type="text" name="sara">
+            age:<input id="id1" type="numbr">
+            <input type="submit" value="login">
+            <p id="message"></p>
+            </form>
+        </body>
+        <script>
+    function validateform(){
+        var x = documit.forms["myform"]["sara"].value;
+        var y = documit.forms["myform"]["id1"].value;
+        if (x == "" || y == ""){
+            alert("name/ age cannot be empty")
+            return false;
+        }
+elsealert("succesfully logged in");
+        }
+    
+        
